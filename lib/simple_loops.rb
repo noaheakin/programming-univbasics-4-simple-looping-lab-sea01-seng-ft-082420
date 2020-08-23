@@ -6,20 +6,20 @@ def loop_message_n_times (message, n)
   n.times {puts message}
 end
 
-def output_array (message)
-  counter = 0
-  while message[counter] do
-    puts message[counter]
-    counter += 1
+def output_array (array)
+  count = 0
+  while array[count] do
+    puts array[count]
+    count += 1
   end
 end
 
 def return_string_array (array)
-  counter = 0
+  count = 0
   new_array = []
-  while counter < array.length do
-    new_array.push (array[counter].to_s)
-    counter += 1
+  while count < array.length do
+    new_array.push(array[count].to_s)
+    count += 1
   end
-  return new_array
+  new_array
 end
